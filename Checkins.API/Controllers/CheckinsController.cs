@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +22,7 @@ namespace Checkins.API.Controllers
         }
 
 
-        // GET: api/Checkins/5
+        // GET: api/Checkins/
         [HttpGet]
         public string Get()
         {
@@ -29,8 +30,8 @@ namespace Checkins.API.Controllers
         }
 
 
-        // GET: api/Checkins/5
-
+        // GET: api/Checkins/5  
+        [Authorize("read:events")]
         [HttpGet("{id}", Name = "Get")]
         public async Task<ActionResult<List<Attendee>>> GetAsyncByEventId(string id, [FromQuery] string attStatus = "")
         {
@@ -51,8 +52,6 @@ namespace Checkins.API.Controllers
                 case "noshow":
                     return Ok(result.Where(a => a.checked_in.Equals(false)).ToList<Attendee>());
 
-                case "all":
-                    return Ok(result);
 
                 default:
                     return BadRequest();

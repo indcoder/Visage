@@ -1,0 +1,38 @@
+﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Http
+@using VisageWeb.App.Shared
+@using System.Linq
+@page "/login"
+@inject IHttpContextAccessor _httpContextAccessor
+@inject HttpClient Http
+@if (User.Identity.IsAuthenticated)
+{
+   
+        var identity = (ClaimsIdentity)User.Identity;
+        IEnumerable<Claim> claims = identity.Claims;
+        var claimsList = claims.ToList();
+   
+    <b>You are logged in as: @claimsList[2].Value</b>
+    <a class="ml-md-auto btn btn-primary"
+       href="/logout?returnUrl=/"
+       target="_top">Logout</a>
+}
+else
+{
+    <a class="ml-md-auto btn btn-primary"
+       href="/login?returnUrl=/"
+       target="_top">Login</a>
+}
+@functions {
+    private ClaimsPrincipal User;
+    protected override void OnInit()
+    {
+        base.OnInit();
+        try
+        {
+            // Set the user to determine if they are logged in
+            User = _httpContextAccessor.HttpContext.User;
+        }
+        catch { }
+    }
+}
