@@ -1,0 +1,63 @@
+name: .NET Core Build and Azure Deploy
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+env:
+  AZURE_RESOURCCE_GROUP: Visage
+  BLOB_STORAGE_ACCOUNT_NAME: visagestatic
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.200
+    - name: Install dependencies for Visage Frontend
+      run: dotnet restore
+    - name: Build Visage Frontend
+      run:  dotnet build --configuration Release --no-restore
+    #TODO: Runs test pass before publishing
+    - name: Public Artifacts
+      uses: action/upload-artifact@master 
+      with:
+        name: webapp
+        path: Visage.Frontend\bin\Release\netstandard2.1\wwwroot\
+        
+  deploy:
+    needs: build
+    name: Deploy to Azure
+    runs-on: [ubuntu-latest]
+    steps:
+      #Download artifacts
+      - name: Download Artifacts
+        uses: actions/downloadartifact@master
+        with:
+          name: webapp
+       #Authentication
+      - name: Authenticate with Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{secrets.AZURE_BLOB }}
+          
+      - name: Deploy to storage using Azure CLI
+        uses: azure/CLI@v1
+        with:
+          azcliversion: latest
+          inlinescript: 
+            # show azure account being used
+            az account show
+            # az storage upload
+            az storage blob upload-batch --account-name ${{env.BLOB_STORAGE_ACCOUNT_NAME}} -s webapp -d \$web
+            
+        
+    
+    
