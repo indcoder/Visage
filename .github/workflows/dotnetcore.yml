@@ -35,7 +35,7 @@ jobs:
     steps:
       #Download artifacts
       - name: Download Artifacts
-        uses: actions/downloadartifact@master
+        uses: actions/download-artifact@master
         with:
           name: webapp
        #Authentication
