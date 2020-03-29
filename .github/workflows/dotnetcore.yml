@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.200
     - name: Install dependencies for Visage Frontend
-      run: dotnet restore ./Visage.Frontend
+      run: dotnet restore
     - name: Build Visage Frontend
       run:  dotnet build Visage.Frontend --configuration Release --no-restore
     #TODO: Runs test pass before publishing
