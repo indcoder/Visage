@@ -26,7 +26,7 @@ jobs:
       uses: actions/upload-artifact@master 
       with:
         name: webapp
-        path: Visage.Frontend\bin\Release\netstandard2.1\wwwroot\
+        path: Visage.Frontend/bin/Release/netstandard2.1/wwwroot
         
   deploy:
     needs: build
