@@ -18,9 +18,9 @@ jobs:
       with:
         dotnet-version: 3.1.200
     - name: Install dependencies for Visage Frontend
-      run: dotnet restore
+      run: dotnet restore ./Visage.Frontend/
     - name: Build Visage Frontend
-      run:  dotnet build --configuration Release --no-restore
+      run:  dotnet build ./Visage.Frontend/ --configuration Release --no-restore
     #TODO: Runs test pass before publishing
     - name: Public Artifacts
       uses: actions/upload-artifact@master 
