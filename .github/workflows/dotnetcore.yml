@@ -23,7 +23,7 @@ jobs:
       run:  dotnet build --configuration Release --no-restore
     #TODO: Runs test pass before publishing
     - name: Public Artifacts
-      uses: action/upload-artifact@master 
+      uses: actions/upload-artifact@master 
       with:
         name: webapp
         path: Visage.Frontend\bin\Release\netstandard2.1\wwwroot\
