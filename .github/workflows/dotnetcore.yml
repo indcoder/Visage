@@ -1,10 +1,6 @@
 name: .NET Core Build and Azure Deploy
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push]
     
 env:
   AZURE_RESOURCCE_GROUP: Visage
