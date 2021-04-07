@@ -23,6 +23,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Spec", "Visage.Spec\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Karyakaram", "Karyakaram", "{822E3099-B552-4CCC-A66E-A87056EBA4E1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scheduling", "Scheduling", "{FA3196C2-E7B4-444A-95C3-D33A5C0B71EB}"
+	ProjectSection(SolutionItems) = preProject
+		services\Scheduling\Scheduling.svg = services\Scheduling\Scheduling.svg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shortlisting", "Shortlisting", "{F179EB43-45AA-493B-9326-E4A1236AB9DC}"
+	ProjectSection(SolutionItems) = preProject
+		services\Shortlisting\Shortlisting.svg = services\Shortlisting\Shortlisting.svg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CheckingIn", "CheckingIn", "{837DA9F0-AAAA-4005-A765-FDB20F5B1A13}"
+	ProjectSection(SolutionItems) = preProject
+		services\CheckingIn\CheckingIn.svg = services\CheckingIn\CheckingIn.svg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +70,9 @@ Global
 		{91883382-668D-4AA8-A54A-FD8425A716D6} = {87B5968D-1DC0-473A-9B88-10B1810E936D}
 		{61947BEF-FD71-4D46-868F-10F510FA65CD} = {91883382-668D-4AA8-A54A-FD8425A716D6}
 		{822E3099-B552-4CCC-A66E-A87056EBA4E1} = {F35A7FEA-7C11-474A-82E5-549966D4DF47}
+		{FA3196C2-E7B4-444A-95C3-D33A5C0B71EB} = {F35A7FEA-7C11-474A-82E5-549966D4DF47}
+		{F179EB43-45AA-493B-9326-E4A1236AB9DC} = {F35A7FEA-7C11-474A-82E5-549966D4DF47}
+		{837DA9F0-AAAA-4005-A765-FDB20F5B1A13} = {F35A7FEA-7C11-474A-82E5-549966D4DF47}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DFD8D43-B55A-46A9-8FC2-22BACFF0AE1F}
