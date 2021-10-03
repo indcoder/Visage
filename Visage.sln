@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CheckingIn", "CheckingIn", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visage.Spec", "Visage.Spec\Visage.Spec.csproj", "{64C4DCE9-6818-4BE0-ADEA-192D07E70B8B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web", "web\web.csproj", "{4EF2839C-AABC-47F3-AE10-988DD7AF83B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{64C4DCE9-6818-4BE0-ADEA-192D07E70B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64C4DCE9-6818-4BE0-ADEA-192D07E70B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64C4DCE9-6818-4BE0-ADEA-192D07E70B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EF2839C-AABC-47F3-AE10-988DD7AF83B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF2839C-AABC-47F3-AE10-988DD7AF83B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF2839C-AABC-47F3-AE10-988DD7AF83B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF2839C-AABC-47F3-AE10-988DD7AF83B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
