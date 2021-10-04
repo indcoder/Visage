@@ -1,0 +1,13 @@
+{
+    "routes": [
+        {
+            "route": "/counter",
+            "allowedRoles": ["bean-counter"]
+        },
+
+        {
+            "route": "/fetchdata",
+            "allowedRoles": ["Organizer"]
+        }
+    ]
+}
