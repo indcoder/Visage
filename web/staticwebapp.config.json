@@ -79,7 +79,7 @@
                 "clientSecretSettingName": "AUTH_CLIENT_SECRET"
               },
               "openIdConnectConfiguration": {
-                "wellKnownOpenIdConfiguration": "https://DOMAIN_AUTHORITY/.well-known/openid-configuration"
+                "wellKnownOpenIdConfiguration": "https://developerday-ind.us.auth0.com/.well-known/openid-configuration"
               }
             },
             "login": {
