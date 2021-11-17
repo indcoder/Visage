@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "fa3196c2-e7b4-444a-95c3-d33a5c0b71eb": {
+      "ProjectGuid": "fa3196c2-e7b4-444a-95c3-d33a5c0b71eb",
+      "DisplayName": "Scheduling",
+      "ColorIndex": 0
+    },
+    "64c4dce9-6818-4be0-adea-192d07e70b8b": {
+      "ProjectGuid": "64c4dce9-6818-4be0-adea-192d07e70b8b",
+      "DisplayName": "Visage.Spec",
+      "ColorIndex": 1
+    },
+    "837da9f0-aaaa-4005-a765-fdb20f5b1a13": {
+      "ProjectGuid": "837da9f0-aaaa-4005-a765-fdb20f5b1a13",
+      "DisplayName": "CheckingIn",
+      "ColorIndex": 2
+    },
+    "4ef2839c-aabc-47f3-ae10-988dd7af83b5": {
+      "ProjectGuid": "4ef2839c-aabc-47f3-ae10-988dd7af83b5",
+      "DisplayName": "web",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
