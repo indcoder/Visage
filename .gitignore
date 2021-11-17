@@ -445,10 +445,14 @@ $RECYCLE.BIN/
 *.sln.iml
 
 ##
-## Visual Studio Code
-##
+## ĀVisual Studio Code
+##Ā
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+## Ensure development certificate and key are not included in the repo
+*.pem
+*.cert
