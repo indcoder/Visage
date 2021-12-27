@@ -12,12 +12,6 @@
         "route": "/.auth/login/aad",
         "statusCode": 404
     },
-
-    {
-      "route": "/.auth/login/github",
-      "statusCode": 404
-    },
-    
     {
       "route": "/logout",
       "redirect": "/.auth/logout?post_logout_redirect_uri=/"
@@ -36,7 +30,6 @@
   },
   
   "auth": {
-    "rolesSource": "/api/GetRoles",
     "identityProviders": {
       "customOpenIdConnectProviders": {
         "auth0": {
