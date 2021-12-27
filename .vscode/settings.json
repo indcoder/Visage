@@ -22,5 +22,11 @@
         "titleBar.inactiveBackground": "#80008099",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "purple"
+    "peacock.color": "purple",
+    "azureFunctions.deploySubpath": "api",
+    "azureFunctions.postDeployTask": "npm install (functions)",
+    "azureFunctions.projectLanguage": "JavaScript",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "npm prune (functions)"
 }
