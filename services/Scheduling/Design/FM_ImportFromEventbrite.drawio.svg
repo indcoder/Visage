@@ -1,0 +1,154 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="873px" height="621px" viewBox="-0.5 -0.5 873 621" content="&lt;mxfile&gt;&lt;diagram id=&quot;pjCPrRKFtbqf0frdJGZE&quot; name=&quot;Page-1&quot;&gt;3ZdNk5owGMc/DfdIAPHYWu32sD3UvpyzJEDGkDAhivTTNwkBQXDGndHu7B6Q8LwQ8/z+ecGD6+L0VaIyfxaYMM8H+OTBL57vLyAE+mYsTWtZhrA1ZJJiF3Q27Ohf4owuLztQTKpRoBKCKVqOjYngnCRqZENSinoclgo27rVEGZkYdgliU+sfilXeWuMQnO1PhGZ51/MCOE+BumBnqHKERT0wwY0H11II1baK05owU7yuLm3e9oq3/2OScHVLgt8mHBE7uLF9qkyRuP4RMkNc117q9jd9cUKwrbTJL0ohlW6Qo+lJ11CKQt825vFFUkVMELexv2ll6tmOVzVdEaU4cEzM/1h48HOd65xdiRLjrbVstC1XBXPulDK2FkxImwvTNPWTRNsziTDVXY58eBVF2lcpKfZk4MHRSxQajxs0kYqcrhZu0ePQOiaiIEo2OsQlwMgRdBLu2NdnPfS2fKwFp0Onwax/9RmTbjhS89TghNqvMhEF5VlHxEKUBkIpSdUiEvwC0FUg4NVAANhuY5OWihGMRQgCEMzBACBcAnAfGPGYhQ9mYASPghFMYPzMdXEjVJiS8ZeqtIMEh6uIMK1Khho7uyi/Zca8HpCeMWkcz4GAEVxBfB8QAbiBBHwUiWhC4ruYFN7U/aMKv1+U/ovwl9O9w2xxpGrFC2h1oW2VI2VvpOm1z6eE+J0RvY30Z1k8TPrxHIvJElQRfSLCqBlhEqk5KUmCVEvA7v3dtm4ZllIcKbYIERM2qKZ6TPpRX4zyfXcsGLyGqncIcdmlvAnE1QTi0/MPe2qUe1fUyy28A/VRV7Rw7lz1sBWte8eAwGYwES7n07uTdwDG8g4fKW/9eP6Osb7B1yDc/AM=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="mx-gradient-fff2cc-1-ffd966-1-s-0">
+            <stop offset="0%" style="stop-color: rgb(255, 242, 204); stop-opacity: 1;"/>
+            <stop offset="100%" style="stop-color: rgb(255, 217, 102); stop-opacity: 1;"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <rect x="280" y="0" width="250" height="110" rx="16.5" ry="16.5" fill="url(#mx-gradient-fff2cc-1-ffd966-1-s-0)" stroke="#d6b656" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 248px; height: 1px; padding-top: 55px; margin-left: 281px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                As an organizer I need to import event from Eventbrite into Visage
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="405" y="59" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    As an organizer I need to import event fr...
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="150" width="240" height="110" fill="#00ff80" stroke="#005700" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 205px; margin-left: 1px;">
+                        <div data-drawio-colors="color: #150404; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(21, 4, 4); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Upcoming events are present on Eventbrite
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="120" y="209" fill="#150404" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Upcoming events are present on Eventbrite
+                </text>
+            </switch>
+        </g>
+        <rect x="320" y="150" width="230" height="110" fill="#ffff88" stroke="#36393d" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 205px; margin-left: 321px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                The  upcoming events are displayed in Visage
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="435" y="209" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    The  upcoming events are displayed in...
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="310" width="240" height="110" fill="#00ff80" stroke="#005700" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 365px; margin-left: 1px;">
+                        <div data-drawio-colors="color: #150404; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(21, 4, 4); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                No upcoming evets
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="120" y="369" fill="#150404" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    No upcoming evets
+                </text>
+            </switch>
+        </g>
+        <rect x="320" y="310" width="230" height="110" fill="#ffff88" stroke="#36393d" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 365px; margin-left: 321px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                A message is displayed that they are no upcoming events
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="435" y="369" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    A message is displayed that they are n...
+                </text>
+            </switch>
+        </g>
+        <rect x="641" y="310" width="230" height="110" fill="#ffff88" stroke="#36393d" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 365px; margin-left: 642px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                A  seconday message of creating an event is provided along with a link to creating it
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="756" y="369" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    A  seconday message of creating an eve...
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="500" width="240" height="110" fill="#00ff80" stroke="#005700" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 555px; margin-left: 1px;">
+                        <div data-drawio-colors="color: #150404; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(21, 4, 4); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                HMR marking in Eventbrite event
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="120" y="559" fill="#150404" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    HMR marking in Eventbrite event
+                </text>
+            </switch>
+        </g>
+        <rect x="321" y="510" width="230" height="110" fill="#ffff88" stroke="#36393d" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 565px; margin-left: 322px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Event is
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="436" y="569" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Event is
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>
