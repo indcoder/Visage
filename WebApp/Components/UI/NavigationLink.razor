@@ -1,8 +1,9 @@
 ﻿@inherits SparkComponent
 
-<a @attributes="@attributes" class="@activeClasses px-3 py-1 rounded inline-flex items-center text-sm font-medium transition-colors hover:text-primary @classes">
+<NavLink @attributes="@attributes" class="text-muted-foreground py-1 rounded inline-flex items-center text-sm font-medium transition-colors hover:text-primary hover:outline">
 	@ChildContent
-</a>
+</NavLink>
+
 
 @code {
 	[Parameter]

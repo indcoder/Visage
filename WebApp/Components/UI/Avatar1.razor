@@ -1,0 +1,43 @@
+<div class="flex items-center">
+    @if(true)
+    {
+    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-gray-400">
+                @if (!string.IsNullOrEmpty(name))
+                {
+                    <img class="h-10 w-10 rounded-full" src="@imageUrl" alt="@name" />
+                }
+                else
+                {
+                    <span class="text-white font-bold">@name.Substring(0, 1)</span>
+                }
+            </div>
+        }
+        else
+        {
+            <a href="/Identity/Account/Login" class="text-white font-bold">Log in</a>
+        }
+</div>
+
+@code{
+
+    [Parameter]
+    public string imageUrl { get; set; } = "url";
+
+    [Parameter]
+    public string name { get; set; } ="Test User";
+
+    [Parameter]
+    public bool isLoggedIn { get; set; }
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+
+
+    private async Task Clicked()
+    {
+        if (OnClick.HasDelegate)
+        {
+            await OnClick.InvokeAsync();
+        }
+    }
+}

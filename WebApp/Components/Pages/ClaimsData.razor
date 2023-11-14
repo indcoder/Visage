@@ -1,0 +1,58 @@
+@page "/claims"
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject Logger<ClaimsData> logger
+
+<h1>ClaimsPrincipal Data</h1>
+
+<button @onclick="GetClaimsPrincipalData">Get ClaimsPrincipal Data</button>
+
+<p>@authMessage</p>
+
+@if (claims.Count() > 0)
+{
+    <ul>
+        @foreach (var claim in claims)
+        {
+            <li>@claim.Type: @claim.Value</li>
+        }
+    </ul>
+}
+
+<p>@surname</p>
+<p>Role: @role</p>
+
+<h1>Roles</h1>
+<p>@roles</p>
+
+@code {
+    private string? authMessage;
+    private string? surname;
+
+    private string? role;
+
+    private List<string>? roles;
+    private IEnumerable<Claim> claims = Enumerable.Empty<Claim>();
+
+    private async Task GetClaimsPrincipalData()
+    {
+        var authState = await AuthenticationStateProvider
+            .GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        logger.LogInformation("GetClaimsPrincipalData");
+
+        if (user.Identity is not null && user.Identity.IsAuthenticated)
+        {
+            authMessage = $"{user.Identity.Name} is authenticated.";
+            claims = user.Claims;
+            surname = user.FindFirst(c => c.Type == ClaimTypes.Surname)?.Value;
+            role = user.FindFirst(c => c.Type == ClaimTypes.Role)?.Value;
+            //roles = user.FindAll(c => c.Type == ClaimTypes.Role).ToList<s>;
+        }
+        else
+        {
+            authMessage = "The user is NOT authenticated.";
+        }
+    }
+}

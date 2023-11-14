@@ -1,0 +1,109 @@
+@page "/members/registrants"
+@using System.ComponentModel.DataAnnotations; 
+@using WebApp.Components.UI
+@inject ILogger<Registrants> Logger
+
+<h1> Registrants Details </h1>
+<EditForm Model="@Model" OnValidSubmit="@Submit" FormName="Registrant" class="justify-center">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div>
+        <InputText @bind-Value="Model!.Id" />
+    </div>
+    <div>
+        <label for="FirstName">First Name</label>
+        <InputText id="FirstName" @bind-Value="Model!.FirstName" />
+    </div>
+    <div>
+        <label for="LastName">Last Name</label>
+        <InputText id="LastName" @bind-Value="Model!.LastName" />
+    </div>
+    <div>
+        <label for="Email">Email</label>
+        <InputText id="Email" @bind-Value="Model!.Email" />
+    </div>
+    <div>
+        <label for="Phone">Phone</label>
+        <InputText id="Phone" @bind-Value="Model!.Phone" />
+    </div>
+    <div>
+        <label for="Address">Address</label>
+        <InputText id="Address" @bind-Value="Model!.Address" />
+    </div>
+    <div>
+        <label for="City">City</label>
+        <InputText id="City" @bind-Value="Model!.City" />
+    </div>
+    <div>
+        <label for="State">State</label>
+        <InputText id="State" @bind-Value="Model!.State" />
+    </div>
+    <div>
+        <label for="ZipCode">Zip Code</label>
+        <InputText id="ZipCode" @bind-Value="Model!.ZipCode" />
+    </div>
+    
+    
+    <ButtonLink Variant="ButtonVariant.Default" type="submit">Submit</ButtonLink>
+</EditForm>
+
+@code {
+    [SupplyParameterFromForm]
+    public Registrant? Model { get; set; }
+
+    protected override void OnInitialized() => Model ??= new();
+
+    private void Submit()
+    { 
+        Logger.LogInformation("Id = {Id}", Model?.Id);
+    }
+
+    public class Starship
+    {
+        [Required]
+        [StringLength(10, ErrorMessage = "Id is too long.")]
+        public string? Id { get; set; }
+    }
+
+
+    public class Registrant
+    {
+
+        [Required]
+        [StringLength(10, ErrorMessage = "Id is too long.")]
+        public string? Id { get; set; }
+
+        [Required(ErrorMessage = "Please enter your first name.")]
+        [StringLength(50, ErrorMessage = "First name is too long.")]
+        public string FirstName { get; set; } = "";
+
+        [Required(ErrorMessage = "Please enter your last name.")]
+        [StringLength(50, ErrorMessage = "Last name is too long.")]
+        public string LastName { get; set; } = "" ;
+
+        [Required(ErrorMessage = "Please enter your email address.")]
+        [EmailAddress(ErrorMessage = "Please enter a valid email address.")]
+        public string Email { get; set; } = ""  ;
+
+        [Required(ErrorMessage = "Please enter your phone number.")]
+        [Phone(ErrorMessage = "Please enter a valid phone number.")]
+        public string Phone { get; set; } = "";
+
+        [Required(ErrorMessage = "Please enter your address.")]
+        [StringLength(100, ErrorMessage = "Address is too long.")]
+        public string Address { get; set; } = "" ;
+
+        [Required(ErrorMessage = "Please enter your city.")]
+        [StringLength(50, ErrorMessage = "City name is too long.")]
+        public string City { get; set; } = "";
+
+        [Required(ErrorMessage = "Please enter your state.")]
+        [StringLength(50, ErrorMessage = "State name is too long.")]
+        public string State { get; set; } = "" ;
+
+        [Required(ErrorMessage = "Please enter your zip code.")]
+        [StringLength(10, ErrorMessage = "Zip code is too long.")]
+        public string ZipCode { get; set; } = "" ;
+    }
+
+}

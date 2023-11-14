@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch and Debug Standalone Blazor WebAssembly App",
+            "type": "blazorwasm",
+            "request": "launch",
+            "browser": "edge",
+            "url": "http://localhost:5000"
+            //"cwd": "${workspaceFolder}"
+        },
+
+        {
+            "name": "Attach and Debug",
+            "type": "blazorwasm",
+            "request": "attach",
+            "url": "http://localhost:5000"
+          }
+    ]
+}

@@ -1,14 +1,19 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using WebApp.Components.UI
 @inject NavigationManager Navigation
 
 <AuthorizeView>
     <Authorized>
-        Hello, @context.User.Identity?.Name!
-        <button class="nav-link btn btn-link" @onclick="BeginLogOut">Log out</button>
+        <Avatar>
+            <AvatarImage src= "@context.User.Claims.FirstOrDefault(c => c.Type == "picture")?.Value" />
+        </Avatar>
+        <ButtonLink @onclick="BeginLogOut">Log out</ButtonLink>
     </Authorized>
     <NotAuthorized>
-        <a href="authentication/login">Log in</a>
+        <ButtonLink href="authentication/login">
+            Login
+        </ButtonLink>   
     </NotAuthorized>
 </AuthorizeView>
 

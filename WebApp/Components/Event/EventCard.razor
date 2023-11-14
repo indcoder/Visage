@@ -1,0 +1,11 @@
+@inherits WebApp.Components.UI.SparkComponent
+@using WebApp.Components.UI
+@using Spark.UI.Components
+
+
+<div class="group h-[350px] w-[300px] py-6 m-8 ml-4 hover:outline hover:outline-primary hover:outline-1 hover:rounded-lg">
+    <EventMast/>
+    <img class="h-44 w-64 mt-6 mx-4 rounded-md" src="https://picsum.photos/id/1005/200/300" />
+    <ButtonLink Variant="ButtonVariant.Outline" class="my-6 mx-4 w-64 justify-center align-middle group-hover:bg-primary group-hover:text-white focus:ring-4" href="/members">Activate</ButtonLink>
+    @ChildContent 
+</div>
