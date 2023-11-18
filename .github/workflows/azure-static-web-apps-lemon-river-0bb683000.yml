@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - run: rm WebApp/package.json && rm WebApp/package-lock.json
+      - run: rm WebApp/package*.json
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
