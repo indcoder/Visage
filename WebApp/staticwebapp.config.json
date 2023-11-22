@@ -40,7 +40,7 @@
               "clientSecretSettingName": "AUTH0_CLIENT_SECRET"
             },
             "openIdConnectConfiguration": {
-              "wellKnownOpenIdConfiguration": "https://developerday-ind.us.auth0.com/.well-known/openid-configuration"
+              "wellKnownOpenIdConfiguration": "https://hackmum.us.auth0.com/.well-known/openid-configuration"
             }
           },
           "login": {

@@ -1,13 +1,13 @@
 @page "/claims"
 @using System.Security.Claims
 @inject AuthenticationStateProvider AuthenticationStateProvider
-@inject Logger<ClaimsData> logger
+@inject ILogger<ClaimsData> logger
 
-<h1>ClaimsPrincipal Data</h1>
+<div class="justify-center align-items-center">
+    <ButtonLink Variant="ButtonVariant.Default" @onclick="GetClaimsPrincipalData" >Get ClaimsPrincipal Data</ButtonLink>
 
-<button @onclick="GetClaimsPrincipalData">Get ClaimsPrincipal Data</button>
-
-<p>@authMessage</p>
+    <p>@authMessage</p>
+</div>
 
 @if (claims.Count() > 0)
 {

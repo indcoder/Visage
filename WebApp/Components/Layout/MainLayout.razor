@@ -5,25 +5,24 @@
 
 
 <NavigationBar> 
-    <div class="flex items-center shrink-0">
-        <img src="/icon_visage.png" alt="Logo" class="h-8">
+    <div class="flex items-center shrink-0 mr-auto">
+        <img src="/icon_visage.png" alt="Logo" class="h-10">
     </div>
 
 	<nav class="flex items-center xs:space-x-0">
 		<NavLink class="text-muted-foreground py-1 rounded inline-flex items-center text-sm font-medium transition-colors hover:text-primary hover:outline" Match="NavLinkMatch.All" href="events">
 			<Tab Icon="@nameof(WebApp.Components.UI.IconEvent)" Text="Events" />
 		</NavLink>
-		
 		<AuthorizeView Roles="admin">
-		<NavLink class="text-muted-foreground py-1 rounded inline-flex items-center text-sm font-medium transition-colors hover:text-primary hover:outline" href="/members">
+			<NavLink class="text-muted-foreground py-1 rounded inline-flex items-center text-sm font-medium transition-colors hover:text-primary hover:outline" href="/members">
 			<Tab Icon="@nameof(IconMembers)" Text="Members" />
-		</NavLink>
-		<NavLink class="text-muted-foreground py-1 rounded inline-flex items-center text-sm font-medium transition-colors hover:text-primary hover:outline" href="/venue">
-			<Tab Icon="@nameof(IconVenue)" Text="Venues" />			
-		</NavLink>
+			</NavLink>
+			<NavLink class="text-muted-foreground py-1 rounded inline-flex items-center text-sm font-medium transition-colors hover:text-primary hover:outline" href="/venue">
+			<Tab Icon="@nameof(IconVenue)" Text="Venues"/>
+			</NavLink>
 		</AuthorizeView>	
 	</nav>
-	<div class="flex items-center space-x-2">
+	<div class="flex items-center space-x-2 ml-auto">
 		<LoginDisplay />
 	</div>
 </NavigationBar>
