@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using WebApp.Components;
 
@@ -11,16 +12,16 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 builder.Services.AddOptions();
 
-builder.Services.AddOidcAuthentication(options =>
-{
-    // Configure your authentication provider options here.
-    // For more information, see https://aka.ms/blazor-standalone-auth
-    builder.Configuration.Bind("hackmum", options.ProviderOptions);
-});
+// builder.Services.AddOidcAuthentication(options =>
+// {
+//       // Configure your authentication provider options here.
+//       // For more information, see https://aka.ms/blazor-standalone-auth
+//     builder.Configuration.Bind("hackmum", options.ProviderOptions);});
 
 builder.Logging.SetMinimumLevel(LogLevel.Debug);
 
-builder.Services.AddAuthorizationCore();
+builder.Services.AddAuthorizationCore()
+                .AddScoped<AuthenticationStateProvider, SwaAuthenticationStateProvider>();
 
 
 await builder.Build().RunAsync();

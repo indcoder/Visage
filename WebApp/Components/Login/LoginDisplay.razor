@@ -8,10 +8,10 @@
         <Avatar>
             <AvatarImage src= "@context.User.Claims.FirstOrDefault(c => c.Type == "picture")?.Value" />
         </Avatar>
-        <ButtonLink @onclick="BeginLogOut">Log out</ButtonLink>
+        <ButtonLink href="/.auth/logout">Log out</ButtonLink>
     </Authorized>
     <NotAuthorized>
-        <ButtonLink href="authentication/login">
+        <ButtonLink href="/.auth/login/auth0">
             Login
         </ButtonLink>   
     </NotAuthorized>
@@ -20,6 +20,6 @@
 @code{
     public void BeginLogOut()
     {
-        Navigation.NavigateToLogout("authentication/logout");
+        Navigation.NavigateToLogout("/.auth/logout");
     }
 }
