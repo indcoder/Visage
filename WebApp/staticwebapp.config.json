@@ -18,8 +18,8 @@
     },
 
     {
-        "route": "/fetchdata",
-        "allowedRoles": ["weathercaster"]
+        "route": "/members",
+        "allowedRoles": ["admin"]
     }
 
     
@@ -30,8 +30,7 @@
   },
   
   "auth": {
-    "rolesSource": "/api/GetRoles",
-    "identityProviders": {
+      "identityProviders": {
       "customOpenIdConnectProviders": {
         "auth0": {
           "registration": {
@@ -40,7 +39,7 @@
               "clientSecretSettingName": "AUTH0_CLIENT_SECRET"
             },
             "openIdConnectConfiguration": {
-              "wellKnownOpenIdConfiguration": "https://developerday-ind.us.auth0.com/.well-known/openid-configuration"
+              "wellKnownOpenIdConfiguration": "https://hackmum.us.auth0.com/.well-known/openid-configuration"
             }
           },
           "login": {

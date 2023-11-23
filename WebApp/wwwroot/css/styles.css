@@ -987,6 +987,14 @@ body {
   margin-top: 2rem;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
 .block {
   display: block;
 }
@@ -1005,10 +1013,6 @@ body {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .aspect-square {
@@ -1438,6 +1442,11 @@ body {
 .py-\[0\.2rem\] {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-2 {
@@ -2003,8 +2012,36 @@ a.active {
   content: var(--blazor-load-percentage-text, "Loading");
 }
 
+.first\:mr-auto:first-child {
+  margin-right: auto;
+}
+
 .first\:mt-0:first-child {
   margin-top: 0px;
+}
+
+.first\:ml-auto:first-child {
+  margin-left: auto;
+}
+
+.first\:mr-6:first-child {
+  margin-right: 1.5rem;
+}
+
+.first\:mr-8:first-child {
+  margin-right: 2rem;
+}
+
+.last\:m-auto:last-child {
+  margin: auto;
+}
+
+.last\:ml-auto:last-child {
+  margin-left: auto;
+}
+
+.last\:mr-auto:last-child {
+  margin-right: auto;
 }
 
 .even\:bg-muted:nth-child(even) {
