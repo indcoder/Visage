@@ -8,10 +8,10 @@
         <Avatar>
             <AvatarImage src= "@context.User.Claims.FirstOrDefault(c => c.Type == "picture")?.Value" />
         </Avatar>
-        <ButtonLink href="/.auth/logout">Log out</ButtonLink>
+        <ButtonLink href="/logout">Log out</ButtonLink>
     </Authorized>
     <NotAuthorized>
-        <ButtonLink href="/.auth/login/auth0">
+        <ButtonLink href="/login">
             Login
         </ButtonLink>   
     </NotAuthorized>
