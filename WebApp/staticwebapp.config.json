@@ -2,7 +2,7 @@
   "routes": [
     {
       "route": "/login",
-      "rewrite": "/.auth/login/auth0"
+      "rewrite": "/.auth/login/auth0?post_login_redirect_uri=https://lemon-river-0bb683000.4.azurestaticapps.net/"
     },
     {
       "route": "/.auth/login/twitter",
